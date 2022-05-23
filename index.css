@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
+html,
+body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
 header {
   background-color: #f9faff;
   height: 58px;
@@ -359,6 +365,10 @@ header {
   width: 250px;
 }
 
+.card-body-s6 {
+  margin-right: 500px;
+}
+
 .border-card-s6 {
   border: none;
   width: 684px;
@@ -387,6 +397,7 @@ header {
 }
 
 .btn-slider > button {
+  margin-top: 80px;
   border: 1px solid #e8e4dc;
   border-radius: 2px;
   background: #ffff;
