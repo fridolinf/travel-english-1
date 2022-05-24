@@ -8,5 +8,3 @@ const getIdPicker = document.getElementById("picker-1");
 
 
 
-
-

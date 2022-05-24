@@ -48,17 +48,20 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse offset-md-2 pl-5" id="navbarText">
-        <ul class="nav navbar-nav nav-pills pl-3" id="pills-tab" role="tablist">
+        <ul class="nav navbar-nav pl-3" id="pills-tab" role="tablist">
           <li class="nav-item" id="pills-home-tab" data-toggle="pill"  role="tab" aria-controls="pills-home" aria-selected="true">
+            <span class="actives">
+            </span>
             <a class="nav-link active mr-4" href="index.html"
-              >Home</a
+            >Home
+           </a
             >
           </li>
           <li class="nav-item mr-4">
             <a class="nav-link" href="#" id="pills-private-tab" data-toggle="pill" role="tab" aria-controls="pills-private" aria-selected="false">Book Private Car</a>
           </li>
-          <li class="nav-item mr-4">
-            <a class="nav-link" href="./packages.html" id="pills-packages-tab" data-toggle="pill" role="tab" aria-controls="pills-packages" aria-selected="false">Bali Tour Packages</a>
+          <li class="nav-item mr-4" onclick="window.location.href='packages.html'">
+            <a class="nav-link" href="packages.html" id="pills-packages-tab" data-toggle="pill" role="tab" aria-controls="pills-packages" aria-selected="false">Bali Tour Packages</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#" id="pills-information-tab" data-toggle="pill" role="tab" aria-controls="pills-information" aria-selected="false">Information</a>
@@ -314,14 +317,14 @@
       </div>
     </section>
 
-    <section class="section-6">
+    <section class="section-6 ">
       <div class="container">
         <div class="row">
           <div class="col-md-7">
             <span class="text-s5-1">Our Customers Love Us</sp>
             <p class="text-s5-2">What Have They Said?</p>
             <div class="row">
-              <div class="card border-card-s6">
+              <div class="card border-card-s6 slider slider1 slider-active">
                 <div class="card-body">
                   <div class="img-card-s6">
                     <div class="container container-img-card-s6">
@@ -348,12 +351,39 @@
                 </div>
           </div>
         </div>
+              <div class="card border-card-s6 slider slider-not-active slider2">
+                <div class="card-body">
+                  <div class="img-card-s6">
+                    <div class="container container-img-card-s6">
+                      <div class="row">
+                        <div class="col-md-3">
+                          <img class="img-body-s6" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz--Pv9XADKPR-DbZYuG_9VgjXNC2ySJ5NRg&usqp=CAU" alt="">
+                        </div>
+                        <div class="col-md-8 mt-2">
+                          <span class="name-card-s6">Andreas Yosi</span>
+                          <span class="place-card-s6">Bertnley, US</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="card-text card-desc-s6 mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa consequatur molestiae, vitae numquam quam in illum reiciendis facere tempore officiis, quo minima! Dicta amet porro quam. Labore iste quos impedit?</p>
+                  <div class="row justify-content-end">
+                  <p>
+                    <i class="bi bi-star-fill start-icon"></i>
+                    <i class="bi bi-star-fill start-icon"></i>
+                    <i class="bi bi-star-fill start-icon"></i>
+                    <i class="bi bi-star-fill start-icon"></i>
+                    <i class="bi bi-star-fill start-icon"></i>
+                  </p>
+                </div>
+          </div>
+        </div>
       </div>
       <div class="row justify-content-end btn-slider">
-        <button class="mr-3">
+        <button class="mr-3" onclick="lefts()">
           <i class="bi bi-chevron-left"></i>
         </button>
-        <button><i class="bi bi-chevron-right"></i></button>
+        <button onclick="rights()"><i class="bi bi-chevron-right"></i></button>
       </div>
         </div>
         <div class="col-md-4 offset-md-1">
