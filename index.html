@@ -48,20 +48,20 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse offset-md-2 pl-5" id="navbarText">
-        <ul class="navbar-nav pl-3">
-          <li class="nav-item active">
-            <a class="nav-link mr-4" href="#"
-              >Home <span class="sr-only">(current)</span></a
+        <ul class="nav navbar-nav nav-pills pl-3" id="pills-tab" role="tablist">
+          <li class="nav-item" id="pills-home-tab" data-toggle="pill"  role="tab" aria-controls="pills-home" aria-selected="true">
+            <a class="nav-link active mr-4" href="index.html"
+              >Home</a
             >
           </li>
           <li class="nav-item mr-4">
-            <a class="nav-link" href="#">Book Private Car</a>
+            <a class="nav-link" href="#" id="pills-private-tab" data-toggle="pill" role="tab" aria-controls="pills-private" aria-selected="false">Book Private Car</a>
           </li>
           <li class="nav-item mr-4">
-            <a class="nav-link" href="packages.html">Bali Tour Packages</a>
+            <a class="nav-link" href="./packages.html" id="pills-packages-tab" data-toggle="pill" role="tab" aria-controls="pills-packages" aria-selected="false">Bali Tour Packages</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Information</a>
+            <a class="nav-link" href="#" id="pills-information-tab" data-toggle="pill" role="tab" aria-controls="pills-information" aria-selected="false">Information</a>
           </li>
         </ul>
       </div>
@@ -80,28 +80,30 @@
             <div class="text-we-are">
               We are Balinese travel agency with our best experience we will serve you.
             </div>
+
+          <div class="row justify-content-center mouse-indicator" aria-label="mouse-indicator">
+            <img src="./assets/mouse.svg" id="mouse-indicator" alt="mouse-indicator">
+          </div>
             <div class="row mt-5 justify-content-center">
               <div class="col">
-                <span class="btn-private-tour mr-3">Book Private Tour</span>
-                <span class=" btn-book-tour">Book a Tour</span>
+                <span class="btn-private-tour mr-3" onclick="location.href='packages.html'">Book Private Tour</span>
+               <a href="#section-4"><span class=" btn-book-tour" >Book a Tour</span></a>
               </div>
             </div>
           </div>
           <div class="col mt-5 offset-md-3">
             <div class="row">
-            <div class="col-md-4 ">
-              <img class="img1" src="https://img.freepik.com/free-photo/empty-sea-beach-background_74190-313.jpg?size=626&ext=jpg&ga=GA1.2.1228024990.1653216028" alt="" srcset="">
-              <img class="img2" src="https://img.freepik.com/free-photo/beautiful_1203-2633.jpg?size=626&ext=jpg&ga=GA1.2.1228024990.1653216028" alt="" srcset="">
+              <div class="col-md-4 ">
+                <img class="img1" src="https://img.freepik.com/free-photo/empty-sea-beach-background_74190-313.jpg?size=626&ext=jpg&ga=GA1.2.1228024990.1653216028" alt="" srcset="">
+                <img class="img2" src="https://img.freepik.com/free-photo/beautiful_1203-2633.jpg?size=626&ext=jpg&ga=GA1.2.1228024990.1653216028" alt="" srcset="">
+              </div>
+              <div class="col-md-4 offset-md-4 mt-5">
+                <img class="img3" src="https://img.freepik.com/free-photo/empty-sea-beach-background_74190-313.jpg?size=626&ext=jpg&ga=GA1.2.1228024990.1653216028" alt="" srcset="">
+                <img class="img4" src="https://img.freepik.com/free-photo/beautiful_1203-2633.jpg?size=626&ext=jpg&ga=GA1.2.1228024990.1653216028" alt="" srcset="">
+              </div>
             </div>
-            <div class="col-md-4 offset-md-4 mt-5">
-              <img class="img3" src="https://img.freepik.com/free-photo/empty-sea-beach-background_74190-313.jpg?size=626&ext=jpg&ga=GA1.2.1228024990.1653216028" alt="" srcset="">
-              <img class="img4" src="https://img.freepik.com/free-photo/beautiful_1203-2633.jpg?size=626&ext=jpg&ga=GA1.2.1228024990.1653216028" alt="" srcset="">
-            </div>
-
           </div>
-        </div>
-
-    </section>
+        </section>
 
     <section class="section-2 ">
       <div class="row offset-md-1">
@@ -176,7 +178,7 @@
 
     </section>
 
-    <section class="section-4">
+    <section class="section-4" id="section-4">
       <div class="row">
 
       <div class="col-md-6">
@@ -451,13 +453,13 @@
         <img width="1119px" height="359px" src="./assets/card-prepare.svg" alt="">
         <p class="text-1-s8">Prepare Yourself & Let's Explore
           The Beauty Of Bali</p>
-        <button class="btn-1-s8">
+        <button class="btn-1-s8" onclick="location.href='packages.html'">
           <span class="text-2-s8">Find Your Next Tour Now!</span>
         </button>
       </div>
     </section>
 
-    <footer class="mt-5">
+    <footer id="footer" class="mt-5">
       <div class="row" style="width: 400px;">
           <img class="footer-img-1 mr-4" src="./assets/mastercard.svg" alt="">
           <img class="footer-img-1 mr-4" src="./assets/visa.svg" alt="">
