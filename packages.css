@@ -2,6 +2,17 @@
   height: 307px;
 }
 
+.actives-packages {
+  margin-top: 20px;
+  background-color: #0c145a;
+  width: 10px;
+  height: 10px;
+  margin-top: 35px;
+  margin-left: 75px;
+  position: absolute;
+  border-radius: 10px;
+}
+
 .text-1-s1 {
   font-weight: 600;
   font-size: 40px;
@@ -10,7 +21,7 @@
   position: absolute;
   z-index: 1000;
   top: 96px;
-  left: 222px;
+  left: 302px;
   text-align: center;
 }
 .text-2-s1 {

@@ -54,6 +54,7 @@ textarea {
   line-height: 27px;
   letter-spacing: -0.02em;
   color: #969696;
+  cursor: pointer;
 }
 
 /* SECTION FORM END */

@@ -51,28 +51,69 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse offset-md-2 pl-5" id="navbarText">
-        <ul class="navbar-nav pl-3">
-          <li class="nav-item">
-            <a class="nav-link mr-4" href="/"
-              >Home <span class="sr-only">(current)</span></a
+        <ul class="nav navbar-nav pl-3" id="pills-tab" role="tablist">
+          <li
+            class="nav-item"
+            id="pills-home-tab"
+            data-toggle="pill"
+            role="tab"
+            aria-controls="pills-home"
+            aria-selected="true"
+            onclick="window.location.href='/'"
+          >
+            <a class="nav-link active mr-4" href="index.html">Home </a>
+          </li>
+          <li
+            class="nav-item mr-4"
+            onclick="window.location.href='bookPrivateCarPage/index.html'"
+          >
+            <a
+              class="nav-link"
+              href="bookPrivateCarPage/index.html"
+              id="pills-private-tab"
+              data-toggle="pill"
+              role="tab"
+              aria-controls="pills-private"
+              aria-selected="false"
+              >Book Private Car</a
             >
           </li>
-          <li class="nav-item mr-4">
-            <a class="nav-link" href="#">Book Private Car</a>
+          <li
+            class="nav-item mr-4"
+            onclick="window.location.href='packages.html'"
+          >
+            <span class="actives-packages"> </span>
+            <a
+              class="nav-link"
+              href="packages.html"
+              id="pills-packages-tab"
+              data-toggle="pill"
+              role="tab"
+              aria-controls="pills-packages"
+              aria-selected="false"
+              >Bali Tour Packages</a
+            >
           </li>
-          <li class="nav-item mr-4">
-            <span class="actives-packages">
-            </span>
-            <a class="nav-link active" href="packages.html">Bali Tour Packages</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Information</a>
+          <li
+            class="nav-item"
+            onclick="window.location.href='informationPage/Information.html'"
+          >
+            <a
+              class="nav-link"
+              href="informationPage/Information.html"
+              id="pills-information-tab"
+              data-toggle="pill"
+              role="tab"
+              aria-controls="pills-information"
+              aria-selected="false"
+              >Information</a
+            >
           </li>
         </ul>
       </div>
     </nav>
 
-    <section class="section-1">
+    <section class="section-1 mt-4">
       <div class="row">
         <div class="col">
           <p class="text-1-s1">
@@ -104,7 +145,7 @@
         </div>
       </div>
       <div class="container-md-6 mt-3">
-        <div class="row justify-content-center offset-md-1">
+        <div class="row justify-content-center">
           <div
             onclick="location.href='./detailPackages/detail.html'"
             class="card card-s5 mr-5"
@@ -227,7 +268,7 @@
             </div>
           </div>
         </div>
-        <div class="row justify-content-center offset-md-1 mt-5">
+        <div class="row justify-content-center mt-5">
           <div class="card card-s5 mr-5">
             <img
               src="https://img.freepik.com/free-photo/chair-table-dinning-beach-sea-with-blue-sky_74190-6094.jpg?t=st=1653229488~exp=1653230088~hmac=b323b295ab9430ffcbb700da10d1fa9d41924af43c72c7e0559d0a7b67bbbdfd&w=996"
@@ -346,7 +387,7 @@
             </div>
           </div>
         </div>
-        <div class="row justify-content-center offset-md-1 mt-5">
+        <div class="row justify-content-center mt-5">
           <div class="card card-s5 mr-5">
             <img
               src="https://img.freepik.com/free-photo/chair-table-dinning-beach-sea-with-blue-sky_74190-6094.jpg?t=st=1653229488~exp=1653230088~hmac=b323b295ab9430ffcbb700da10d1fa9d41924af43c72c7e0559d0a7b67bbbdfd&w=996"
@@ -638,5 +679,6 @@
       integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
       crossorigin="anonymous"
     ></script>
+    <script src="./index.js"></script>
   </body>
 </html>
