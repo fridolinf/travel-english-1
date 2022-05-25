@@ -17,6 +17,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   height: 20px;
   border-width: thin;
 }
+
+.deletes {
+  display: none;
+}
+
 .actives {
   margin-top: 20px;
   background-color: #0c145a;
@@ -47,6 +52,35 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   margin-left: 35vw;
   margin-top: 7vw;
   cursor: pointer;
+}
+
+.mouse-indicator-2 {
+  position: absolute;
+  z-index: 1000;
+  margin-top: 50vw;
+  cursor: pointer;
+}
+
+.mouse-indicator-3 {
+  position: absolute;
+  z-index: 1000;
+  cursor: pointer;
+  margin-left: 49vw;
+}
+.mouse-indicator-4 {
+  position: absolute;
+  z-index: 1000;
+  cursor: pointer;
+  margin-left: 50vw;
+  margin-top: 1vw;
+}
+.mouse-indicator-6 {
+  position: absolute;
+  z-index: 1000;
+  cursor: pointer;
+  margin-left: 50vw;
+  margin-top: 1vw;
+  transform: rotate(180deg);
 }
 
 header {
@@ -229,6 +263,13 @@ header {
 .img-card-s3 {
   width: 80px;
   height: 80px;
+  border-radius: 50px;
+  background: rgba(12, 20, 90, 0.11);
+}
+
+.ic-card-s3 {
+  font-size: 50px;
+  padding: 20px 20px 10px 20px;
   border-radius: 50px;
   background: rgba(12, 20, 90, 0.11);
 }
